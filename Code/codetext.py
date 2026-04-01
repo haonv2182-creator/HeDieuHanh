@@ -1,9 +1,2 @@
-print("xin chao github")
-
-
-
-
-
-
-
-ádasdsadsd
+print("Xin chào,", name)
+fsfkmkdlsnfkjdsn
