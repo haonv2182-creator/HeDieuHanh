@@ -1,1 +1,9 @@
-file này đã sửa r nha 
+print("xin chao github")
+
+
+
+
+
+
+
+ádasdsadsd
