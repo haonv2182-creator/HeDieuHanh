@@ -1,9 +1,9 @@
 ## ĐỒ ÁN HỆ ĐIỀU HÀNH - OS_SCH_02
 ## Các Thành Viên
-1. 068206013277-Phạm Vũ Anh Tuấn
-2. 066206002182 - Nguyễn Văn Hào
-3. 
-4.
+1. Phạm Vũ Anh Tuấn - 068206013277
+2. Nguyễn Văn Hào - 066206002182
+3. Nguyễn Ngọc Bảo An - 066306002093
+4. Phạm Lê Văn Bảo - 075206025346
 5.
 ## Tên đề tài
 Xây dựng ứng dụng mô phỏng thuật toán lập lịch CPU:
