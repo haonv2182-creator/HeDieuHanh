@@ -28,8 +28,9 @@ if __name__ == "__main__":
     
     result = fcfs(processes)
 
-    print("PID AT BT PR ST CT WT TAT")
+    print("PID AT BT PR ST CT WT TAT")  # PID, Arrival Time, Burst Time, Priority, Start Time, Completion Time, Waiting Time, Turnaround Time
     for p in result:
         print(f"{p['pid']:>3} {p['arrival_time']:>2} {p['burst_time']:>2} {p['priority']:>2} "
               f"{p['start_time']:>2} {p['completion_time']:>2} {p['waiting_time']:>2} {p['turnaround_time']:>2}")
-    
+    # FCFS kh cần dùng priority, giữ để thống nhất dữ liệu với các thuật toán khác
+     
