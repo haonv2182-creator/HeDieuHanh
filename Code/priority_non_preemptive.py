@@ -1,70 +1,67 @@
-class Process:
-    def __init__(self, pid, arrival, burst, priority):
-        self.pid = pid
-        self.arrival = arrival
-        self.burst = burst
-        self.priority = priority
-
-        self.start = 0
-        self.completion = 0
-        self.waiting = 0
-        self.turnaround = 0
-
-
 def priority_non_preemptive(processes):
-    n = len(processes)
-    time = 0
-    completed = 0
-    visited = [False] * n
+    # Tạo bản sao để không làm thay đổi dữ liệu gốc
+    copied_processes = [p.copy() for p in processes]
 
+    n = len(copied_processes)
+    visited = [False] * n
+    completed = 0
+    current_time = 0
     result = []
 
     while completed < n:
         idx = -1
-        best_priority = float('inf')
 
         for i in range(n):
-            if (not visited[i]) and processes[i].arrival <= time:
-                if processes[i].priority < best_priority:
-                    best_priority = processes[i].priority
+            if not visited[i] and copied_processes[i]["arrival_time"] <= current_time:
+                if idx == -1:
                     idx = i
+                else:
+                    # Tie-break:
+                    # 1. priority nhỏ hơn
+                    # 2. arrival_time nhỏ hơn
+                    # 3. pid nhỏ hơn
+                    if copied_processes[i]["priority"] < copied_processes[idx]["priority"]:
+                        idx = i
+                    elif copied_processes[i]["priority"] == copied_processes[idx]["priority"]:
+                        if copied_processes[i]["arrival_time"] < copied_processes[idx]["arrival_time"]:
+                            idx = i
+                        elif copied_processes[i]["arrival_time"] == copied_processes[idx]["arrival_time"]:
+                            if str(copied_processes[i]["pid"]) < str(copied_processes[idx]["pid"]):
+                                idx = i
 
-        # Nếu không có process nào đến → CPU rảnh
+        # Nếu chưa có process nào đến thì CPU rảnh
         if idx == -1:
-            time += 1
+            current_time += 1
             continue
 
-        p = processes[idx]
+        p = copied_processes[idx]
 
-        p.start = time
-        p.completion = time + p.burst
-        p.turnaround = p.completion - p.arrival
-        p.waiting = p.start - p.arrival
+        p["start_time"] = current_time
+        p["completion_time"] = p["start_time"] + p["burst_time"]
+        p["turnaround_time"] = p["completion_time"] - p["arrival_time"]
+        p["waiting_time"] = p["start_time"] - p["arrival_time"]
 
-        time = p.completion
+        current_time = p["completion_time"]
         visited[idx] = True
         completed += 1
-
         result.append(p)
 
     return result
 
-#test file 
-if __name__ == "__main__":
-    print("=== TEST PRIORITY NON-PREEMPTIVE ===")
 
-    processes = [
-        Process("P1", 0, 4, 2),
-        Process("P2", 1, 3, 1),
-        Process("P3", 2, 1, 3),
-        Process("P4", 3, 2, 2),
+if __name__ == "__main__":
+    test_processes = [
+        {"pid": "P1", "arrival_time": 0, "burst_time": 4, "priority": 2},
+        {"pid": "P2", "arrival_time": 1, "burst_time": 3, "priority": 1},
+        {"pid": "P3", "arrival_time": 2, "burst_time": 1, "priority": 3},
+        {"pid": "P4", "arrival_time": 3, "burst_time": 2, "priority": 2},
     ]
 
-    result = priority_non_preemptive(processes)
+    result = priority_non_preemptive(test_processes)
 
-    print("\nPID | AT | BT | PR | ST | CT | WT | TAT")
-    print("----------------------------------------")
-
+    print("PID AT BT PR ST CT WT TAT")
     for p in result:
-        print(f"{p.pid:>3} | {p.arrival:>2} | {p.burst:>2} | {p.priority:>2} | "
-              f"{p.start:>2} | {p.completion:>2} | {p.waiting:>2} | {p.turnaround:>3}")
+        print(
+            f"{p['pid']:>3} {p['arrival_time']:>2} {p['burst_time']:>2} {p['priority']:>2} "
+            f"{p['start_time']:>2} {p['completion_time']:>2} {p['waiting_time']:>2} {p['turnaround_time']:>3}"
+        )
