@@ -4,7 +4,7 @@
 2. Nguyễn Văn Hào - 066206002182
 3. Nguyễn Ngọc Bảo An - 066306002093
 4. Phạm Lê Văn Bảo - 075206025346
-5.
+5. Lê Khánh Duy - 093206001806
 ## Tên đề tài
 Xây dựng ứng dụng mô phỏng thuật toán lập lịch CPU:
 - FCFS (First Come, First Served)
