@@ -1,9 +1,9 @@
 import tkinter as tk
 from tkinter import ttk, messagebox
 
-from fcfs import run_fcfs
-from data_manager import validate_process, sample_processes
-
+from fcfs import fcfs
+from data_manager import validate_process
+from priority_non_preemptive import priority_non_preemptive
 
 class App:
     def __init__(self, root):
@@ -96,7 +96,7 @@ class App:
             messagebox.showinfo("Thông báo", "Priority sẽ hoàn thiện ở tuần sau.")
             return
 
-        results = run_fcfs(self.processes)
+        results = fcfs(self.processes)
 
         for item in self.result_tree.get_children():
             self.result_tree.delete(item)
@@ -110,3 +110,7 @@ class App:
                     r["start"], r["completion"], r["waiting"], r["turnaround"]
                 )
             )
+if __name__ == "__main__":
+    root = tk.Tk()
+    app = App(root)
+    root.mainloop()
