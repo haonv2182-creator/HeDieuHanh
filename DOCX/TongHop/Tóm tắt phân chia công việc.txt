@@ -1,0 +1,11 @@
+Người 1 — Code/main.py và tích hợp chương trình
+Phụ trách file chạy chính, import gui.py, ghép các module của cả nhóm, kiểm tra lỗi import và đảm bảo app chạy được bằng python main.py. Đồng thời hỗ trợ gộp code cuối mỗi tuần. Kết quả cần có là main.py chạy được, mở được cửa sổ app và không lỗi import. 
+Người 2 — Code/gui.py và giao diện ứng dụng
+Phụ trách toàn bộ phần giao diện Tkinter: tạo ô nhập tiến trình, các nút chức năng, bảng danh sách tiến trình, bảng kết quả và khu vực Gantt Chart. Người này nhận dữ liệu từ data_manager.py, nhận kết quả từ fcfs.py và priority_non_preemptive.py, rồi hiển thị lên giao diện. Kết quả cần có là giao diện dễ dùng, nút hoạt động, bảng kết quả đúng và có chỗ hiển thị Gantt Chart. 
+Người 3 — Code/fcfs.py và kiểm thử FCFS
+Phụ trách viết thuật toán FCFS, tính đúng các giá trị start time, completion time, waiting time, turnaround time, xử lý theo arrival time, test bằng dữ liệu mẫu và đối chiếu với cách tính tay. Sau đó gửi kết quả cho người 2 để đưa lên giao diện, và gửi phần giải thích thuật toán cho báo cáo. 
+Người 4 — Code/priority_non_preemptive.py và kiểm thử Priority
+Phụ trách thuật toán Priority không độc quyền. Công việc gồm xét các tiến trình đã đến, chọn tiến trình có độ ưu tiên cao hơn, quy ước rõ số priority nhỏ hơn là ưu tiên cao hơn, xử lý khi CPU rảnh, test bằng dữ liệu mẫu và đối chiếu kết quả với tính tay. Sau đó gửi kết quả cho người 2 để hiển thị trên app và gửi phần giải thích cho báo cáo. 
+Người 5 — Code/data_manager.py, README, GitHub, tổng hợp tài liệu
+Phụ trách phần dữ liệu và quản lý repo. Cụ thể là viết data_manager.py với các hàm kiểm tra dữ liệu nhập, tạo dữ liệu mẫu, đọc CSV input, xuất CSV output; hỗ trợ người 2 kết nối dữ liệu với giao diện; tạo đúng cấu trúc repo; quản lý commit/push; viết README.md; và tổng hợp nội dung để hoàn thiện DOCX/PPTX. Người này không làm toàn bộ Word/slide một mình mà chỉ gom và chỉnh cuối. 
+

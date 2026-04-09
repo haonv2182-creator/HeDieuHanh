@@ -1,0 +1,56 @@
+		Ý nghĩa từng thư mục
+Code/
+Đây là thư mục chứa toàn bộ mã nguồn chương trình.
+Với bài Python của nhóm bạn, trong đây có thể gồm:
+•	main.py: file chạy chính 
+•	gui.py: giao diện ứng dụng 
+•	fcfs.py: thuật toán FCFS 
+•	priority_non_preemptive.py: thuật toán Priority không độc quyền 
+•	data_manager.py: xử lý dữ liệu, CSV, dữ liệu mẫu 
+Nói ngắn gọn: đây là nơi chứa phần mềm mà nhóm xây dựng.
+________________________________________
+DOCX/
+Đây là thư mục chứa báo cáo Word của đồ án.
+Trong đó thường có: 
+Người 1: mô tả file main.py 
+Người 2: mô tả giao diện đã làm 
+Người 3: mô tả FCFS đã làm đến đâu 
+Người 4: mô tả Priority đang làm đến đâu 
+Người 5: tổng hợp, ghi phân công và tiến độ 
+Nói ngắn gọn: đây là nơi chứa tài liệu báo cáo viết bằng Word. ( Kiểu mọi người sẽ giải thích code nói thuật toán của mình ấy)
+________________________________________
+Extra/
+Đây là thư mục chứa tài liệu phụ và minh chứng.
+Có thể gồm:
+•	ảnh chụp giao diện chương trình 
+•	ảnh kết quả chạy 
+•	ảnh commit GitHub 
+•	ảnh phân công công việc 
+•	file CSV mẫu 
+•	sơ đồ thuật toán 
+•	ảnh test FCFS, Priority 
+•	ảnh tiến độ theo từng tuần 
+•	link/video demo hoặc ảnh liên quan đến video 
+Nói ngắn gọn: đây là nơi để chứng minh nhóm có làm thật và có tiến độ thật.
+________________________________________
+PPTX/
+Đây là thư mục chứa slide thuyết trình.
+Thường sẽ có:
+•	file PowerPoint dùng để báo cáo trước lớp 
+•	bản nháp slide 
+•	bản cuối slide 
+Ví dụ:
+•	CPU_Scheduling_Presentation.pptx 
+Nói ngắn gọn: đây là nơi chứa file trình chiếu để thuyết trình đồ án.
+________________________________________
+README.md
+Đây là file giới thiệu chung của repo.
+File này nên có:
+•	tên đề tài 
+•	mã đề tài 
+•	thành viên nhóm 
+•	mô tả ngắn project 
+•	cấu trúc thư mục 
+•	cách chạy chương trình 
+Nói ngắn gọn: đây là file giúp người xem hiểu repo này làm gì và dùng như thế nào.
+
