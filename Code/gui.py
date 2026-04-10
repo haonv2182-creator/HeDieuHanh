@@ -1,9 +1,14 @@
 import tkinter as tk
-from tkinter import ttk, messagebox
+from tkinter import ttk, messagebox, filedialog
 
 from fcfs import fcfs
 from priority_non_preemptive import priority_non_preemptive
-from data_manager import validate_process, sample_processes, export_results_to_csv
+from data_manager import (
+    validate_process,
+    sample_processes,
+    export_results_to_csv,
+    load_processes_from_csv
+)
 
 
 class App:
@@ -39,7 +44,8 @@ class App:
 
         tk.Button(input_frame, text="Thêm tiến trình", command=self.add_process).grid(row=1, column=4, padx=8)
         tk.Button(input_frame, text="Dữ liệu mẫu", command=self.load_sample).grid(row=1, column=5, padx=8)
-        tk.Button(input_frame, text="Xóa tất cả", command=self.clear_all).grid(row=1, column=6, padx=8)
+        tk.Button(input_frame, text="Nạp CSV", command=self.load_from_csv).grid(row=1, column=6, padx=8)
+        tk.Button(input_frame, text="Xóa tất cả", command=self.clear_all).grid(row=1, column=7, padx=8)
 
         # ===== Bảng danh sách tiến trình đã nhập =====
         process_frame = tk.LabelFrame(self.root, text="Danh sách tiến trình đã nhập", padx=10, pady=10)
@@ -148,6 +154,30 @@ class App:
             self.result_tree.delete(item)
 
         self.summary_label.config(text="WT trung bình: -- | TAT trung bình: --")
+
+    def load_from_csv(self):
+        file_path = filedialog.askopenfilename(
+            title="Chọn file CSV",
+            filetypes=[("CSV files", "*.csv")]
+        )
+
+        if not file_path:
+            return
+
+        try:
+            self.processes = load_processes_from_csv(file_path)
+            self.last_results = []
+
+            self.refresh_process_tree()
+
+            for item in self.result_tree.get_children():
+                self.result_tree.delete(item)
+
+            self.summary_label.config(text="WT trung bình: -- | TAT trung bình: --")
+
+            messagebox.showinfo("Thành công", "Đã nạp dữ liệu từ file CSV.")
+        except Exception as e:
+            messagebox.showerror("Lỗi", str(e))
 
     def clear_all(self):
         self.processes.clear()
