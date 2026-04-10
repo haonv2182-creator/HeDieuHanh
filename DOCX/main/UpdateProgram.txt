@@ -1,0 +1,13 @@
+                                            Tổng Hợp Và Hoàn Thiện Đồ Án 
+Các sửa đổi chính của chương trình:
+Chuẩn hóa đường dẫn xuất file CSV bằng đường dẫn tương đối thay cho đường dẫn tuyệt đối.
+Bổ sung thư mục output tự tạo trong project để lưu file kết quả.
+Sửa lỗi không đồng nhất tên khóa dữ liệu giữa thuật toán và giao diện.
+Hoàn thiện chức năng chạy cả FCFS và Priority Non-preemptive.
+Bổ sung bảng hiển thị danh sách tiến trình đã nhập.
+Bổ sung nút dữ liệu mẫu và xuất CSV.
+Bổ sung tính Waiting Time trung bình và Turnaround Time trung bình.
+Cải thiện chức năng xóa toàn bộ dữ liệu trên giao diện.
+Kiểm tra trùng mã tiến trình khi nhập dữ liệu.
+Gom dữ liệu mẫu về một nơi chung để tránh lặp code.
+Bổ sung quy tắc tie-break khi nhiều tiến trình có cùng độ ưu tiên ở thuật toán Priority Non-preemptive
