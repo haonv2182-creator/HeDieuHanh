@@ -1,5 +1,5 @@
 Người 1 — Code/main.py và tích hợp chương trình
-Phụ trách file chạy chính, import gui.py, ghép các module của cả nhóm, kiểm tra lỗi import và đảm bảo app chạy được bằng python main.py. Đồng thời hỗ trợ gộp code cuối mỗi tuần. Kết quả cần có là main.py chạy được, mở được cửa sổ app và không lỗi import. 
+Phụ trách xây dựng file chạy chính main.py, import gui.py và tích hợp các module của cả nhóm. Kiểm tra lỗi import, đảm bảo ứng dụng hoạt động ổn định khi chạy bằng lệnh python main.py. Đồng thời thực hiện hiệu chỉnh và tối ưu mã nguồn ở nhiều module nhằm đảm bảo tính đồng nhất và chính xác của hệ thống. Hỗ trợ gộp code định kỳ, kiểm thử toàn bộ chương trình và hoàn thiện sản phẩm cuối cùng.
 Người 2 — Code/gui.py và giao diện ứng dụng
 Phụ trách toàn bộ phần giao diện Tkinter: tạo ô nhập tiến trình, các nút chức năng, bảng danh sách tiến trình, bảng kết quả và khu vực Gantt Chart. Người này nhận dữ liệu từ data_manager.py, nhận kết quả từ fcfs.py và priority_non_preemptive.py, rồi hiển thị lên giao diện. Kết quả cần có là giao diện dễ dùng, nút hoạt động, bảng kết quả đúng và có chỗ hiển thị Gantt Chart. 
 Người 3 — Code/fcfs.py và kiểm thử FCFS
