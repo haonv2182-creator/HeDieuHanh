@@ -30,10 +30,10 @@ def validate_process(pid, arrival, burst, priority): ## Kiểm tra tính hợp l
 
 def sample_processes(): ##Hàm tạo dữ liệu mẫu để thử nghiệm, kiểm tra các thuật toán.
     return [
-        {"pid": "P1", "arrival_time": 0, "burst_time": 5, "priority": 2},
-        {"pid": "P2", "arrival_time": 1, "burst_time": 3, "priority": 1},
-        {"pid": "P3", "arrival_time": 2, "burst_time": 2, "priority": 3},
-        {"pid": "P4", "arrival_time": 4, "burst_time": 1, "priority": 2},
+        {"pid": "1", "arrival_time": 0, "burst_time": 5, "priority": 2},
+        {"pid": "2", "arrival_time": 1, "burst_time": 3, "priority": 1},
+        {"pid": "3", "arrival_time": 2, "burst_time": 2, "priority": 3},
+        {"pid": "4", "arrival_time": 4, "burst_time": 1, "priority": 2},
     ]
 
 
@@ -56,6 +56,9 @@ def load_processes_from_csv(file_path): ## Hàm đọc dữ liệu tiến trình
                 )
 
         for row in reader:
+            if not any(str(value).strip() for value in row.values()):
+                continue
+
             normalized_row = {k.strip(): v for k, v in row.items()}
 
             process = validate_process(
@@ -78,7 +81,8 @@ def export_results_to_csv(results, algorithm_name="algorithm"): ## Hàm ghi các
         .replace(")", "")
     )
 
-    output_folder = r"E:\HeDieuHanh\BaoCaoHeDieuHanh\HeDieuHanh\Extra\data_manager"
+    base_dir = os.path.dirname(os.path.abspath(__file__))
+    output_folder = os.path.join(base_dir, "output")
     os.makedirs(output_folder, exist_ok=True)
 
     file_name = f"ket_qua_{safe_name}.csv"
