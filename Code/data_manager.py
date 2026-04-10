@@ -1,8 +1,8 @@
-import csv
+import csv ## 
 import os
 
 
-def validate_process(pid, arrival, burst, priority):
+def validate_process(pid, arrival, burst, priority): ## Kiểm tra tính hợp lệ của một tiến trình
     pid = str(pid).strip()
     if not pid:
         raise ValueError("Mã tiến trình không được để trống.")
@@ -28,7 +28,7 @@ def validate_process(pid, arrival, burst, priority):
     }
 
 
-def sample_processes():
+def sample_processes(): ##Hàm tạo dữ liệu mẫu để thử nghiệm, kiểm tra các thuật toán.
     return [
         {"pid": "P1", "arrival_time": 0, "burst_time": 5, "priority": 2},
         {"pid": "P2", "arrival_time": 1, "burst_time": 3, "priority": 1},
@@ -37,7 +37,7 @@ def sample_processes():
     ]
 
 
-def load_processes_from_csv(file_path):
+def load_processes_from_csv(file_path): ## Hàm đọc dữ liệu tiến trình từ file CVS
     processes = []
 
     with open(file_path, mode="r", encoding="utf-8-sig", newline="") as file:
@@ -69,7 +69,7 @@ def load_processes_from_csv(file_path):
     return processes
 
 
-def export_results_to_csv(results, algorithm_name="algorithm"):
+def export_results_to_csv(results, algorithm_name="algorithm"): ## Hàm ghi các kết quả ra file CVS
     safe_name = (
         str(algorithm_name)
         .strip()
