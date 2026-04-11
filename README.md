@@ -12,4 +12,14 @@ Xây dựng ứng dụng mô phỏng thuật toán lập lịch CPU:
 ## Mô tả đề tài
 Đây là ứng dụng được xây dựng nhằm mô phỏng các thuật toán lập lịch CPU trong môn Hệ điều hành.  
 Chương trình cho phép người dùng nhập danh sách tiến trình, lựa chọn thuật toán lập lịch và xem kết quả xử lý.
+## Công nghệ sử dụng
+Ngôn ngữ lập trình: Python
+Giao diện: Tkinter
+Thư viện hỗ trợ: csv, os, tkinter.ttk, tkinter.messagebox
+Công cụ phát triển: Visual Studio Code, Git, GitHub
+## Mục tiêu của project
+Giúp sinh viên hiểu rõ nguyên lý hoạt động của các thuật toán lập lịch CPU
+Minh họa trực quan quá trình xử lý tiến trình
+So sánh kết quả giữa thuật toán FCFS và Priority Non-preemptive
+Hỗ trợ học tập, thực hành và báo cáo môn Hệ điều hành
 
