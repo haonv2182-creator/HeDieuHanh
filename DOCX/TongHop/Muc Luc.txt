@@ -1,11 +1,12 @@
 MỤC LỤC
 LỜI MỞ ĐẦU
-Chương 1. Giới thiệu đề tài
+## Chương 1. Giới thiệu đề tài
 1.1. Lý do chọn đề tài
 1.2. Mục tiêu của đề tài
 1.3. Phạm vi thực hiện
 1.4. Thành viên thực hiện và phân công công việc
-Chương 2. Cơ sở lý thuyết và xây dựng chương trình
+
+## Chương 2. Cơ sở lý thuyết và xây dựng chương trình
 2.1. Khái niệm lập lịch CPU
 2.2. Các thông số của tiến trình
 
@@ -24,30 +25,23 @@ Chương 2. Cơ sở lý thuyết và xây dựng chương trình
 2.5.2. Vai trò của biểu đồ Gantt trong chương trình
 2.5.3. Cách biểu diễn tiến trình trên biểu đồ Gantt
 
-2.6. Thiết kế dữ liệu và các module
-2.6.1. Cấu trúc dữ liệu tiến trình
-2.6.2. Module giao diện
-2.6.3. Module xử lý dữ liệu và file CSV
-2.6.4. Module điều khiển chương trình
-Chương 3. Cài đặt chương trình
-3.1. Công nghệ sử dụng
+## Chương 3. Cách thực hiện và triển khải
+3.1. Môi trường phát triển 
 3.2. Mô tả giao diện chương trình
 3.3. Xử lý dữ liệu đầu vào
 3.4. Đọc và ghi file CSV
-3.5. Hiển thị kết quả thực thi
+3.5. Hiển thị kết quả thực thi và biểu đồ Gantt
 
-3.6. Cài đặt và hiển thị biểu đồ Gantt
-3.6.1. Khu vực hiển thị biểu đồ Gantt trên giao diện
-3.6.2. Cách vẽ biểu đồ Gantt cho thuật toán FCFS
-3.6.3. Cách vẽ biểu đồ Gantt cho thuật toán Priority Non-preemptive
-Chương 4. Kết quả thực nghiệm và đánh giá
+## Chương 4. Kết quả thực nghiệm và đánh giá
 4.1. Kết quả chạy với thuật toán FCFS
 4.2. Kết quả chạy với thuật toán Priority Non-preemptive
 4.3. Kết quả hiển thị biểu đồ Gantt
 4.4. Đối chiếu với kết quả tính tay
 4.5. Ưu điểm và hạn chế của chương trình
-Chương 5. Kết luận và hướng phát triển
+
+## Chương 5. Kết luận và hướng phát triển
 5.1. Kết luận
 5.2. Hướng phát triển
 TÀI LIỆU THAM KHẢO
+
 
