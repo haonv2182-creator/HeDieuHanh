@@ -1,0 +1,27 @@
+BÁO CÁO CÁ NHÂN – NGƯỜI 2 (GIAO DIỆN ỨNG DỤNG)
+Họ và tên: Lê Khánh Duy
+MSSV: 093206001806
+
+
+1. Phần được giao
+Trong dự án môn học, em được phân công đảm nhiệm vai trò phát triển giao diện người dùng cho toàn bộ ứng dụng, cụ thể là xây dựng và hoàn thiện file gui.py. Đây là phần đóng vai trò trung gian giữa người dùng và hệ thống xử lý phía sau, vì vậy yêu cầu phải đảm bảo tính trực quan, dễ sử dụng và đầy đủ chức năng.
+Nhiệm vụ chính của em bao gồm thiết kế cửa sổ ứng dụng bằng thư viện Tkinter, tạo các thành phần nhập liệu như mã tiến trình, thời điểm đến, thời gian chạy và độ ưu tiên. Đồng thời, em cũng phải xây dựng các nút chức năng như thêm tiến trình, tải dữ liệu mẫu, đọc file CSV, xóa toàn bộ dữ liệu, chạy chương trình và xuất kết quả ra file CSV.
+Ngoài ra, tôi còn phụ trách hiển thị dữ liệu thông qua bảng “Danh sách tiến trình” và bảng “Kết quả”, cũng như tạo khu vực hiển thị biểu đồ Gantt Chart nhằm trực quan hóa quá trình lập lịch.
+2. Đã làm được gì
+Trong quá trình thực hiện, em đã hoàn thành việc xây dựng giao diện cơ bản của ứng dụng với bố cục rõ ràng và hợp lý. Cửa sổ chính được thiết kế dễ nhìn, các thành phần được sắp xếp khoa học giúp người dùng thao tác thuận tiện.
+Các ô nhập liệu đã được xây dựng đầy đủ và có thể nhận dữ liệu từ người dùng một cách chính xác. Các nút chức năng cũng đã hoạt động ổn định, bao gồm việc thêm tiến trình vào danh sách, tải dữ liệu mẫu để kiểm tra nhanh, đọc dữ liệu từ file CSV và xóa toàn bộ dữ liệu khi cần thiết.
+Bên cạnh đó, em đã xây dựng bảng hiển thị “Danh sách tiến trình” để thể hiện dữ liệu đầu vào và bảng “Kết quả” để hiển thị kết quả sau khi chạy thuật toán. Giao diện đã có thể nhận dữ liệu từ module data_manager.py và nhận kết quả xử lý từ các thuật toán như fcfs.py và priority_non_preemptive.py.
+Ngoài ra, em cũng đã tạo khu vực hiển thị Gantt Chart nhằm giúp người dùng quan sát trực quan thứ tự và thời gian thực thi của các tiến trình. Nhìn chung, giao diện đã đáp ứng được các yêu cầu cơ bản của đề tài.
+3. Khó khăn gặp phải
+Trong quá trình thực hiện, tôi gặp một số khó khăn đáng kể. Đầu tiên là việc làm quen với thư viện Tkinter, vì đây là lần đầu em sử dụng để xây dựng một giao diện hoàn chỉnh. Việc căn chỉnh bố cục, xử lý sự kiện và đảm bảo giao diện hoạt động mượt mà đòi hỏi nhiều thời gian tìm hiểu và thử nghiệm.
+Ngoài ra, việc kết nối giữa giao diện và các module xử lý phía sau cũng gặp một số vấn đề, đặc biệt là khi dữ liệu truyền qua lại chưa đồng bộ hoặc xảy ra lỗi logic.
+Bên cạnh đó, làm việc nhóm thông qua GitHub cũng là một thách thức. Tôi gặp khó khăn trong việc sử dụng các thao tác như commit, push và xử lý xung đột code khi nhiều thành viên cùng chỉnh sửa một dự án. Điều này đôi khi làm gián đoạn tiến độ công việc.
+4. Học được gì
+Thông qua quá trình thực hiện dự án, em đã học được nhiều kiến thức và kỹ năng quan trọng. Trước hết, em  hiểu rõ hơn về cách xây dựng giao diện người dùng bằng Tkinter, từ việc tạo các widget cơ bản đến tổ chức bố cục và xử lý sự kiện.
+Ngoài ra, em cũng học được cách kết nối giữa giao diện và các module xử lý, giúp chương trình hoạt động một cách hoàn chỉnh và đồng bộ.
+Đặc biệt, từ những khó khăn khi làm việc với GitHub, em đã cải thiện kỹ năng sử dụng hệ thống quản lý phiên bản, biết cách commit code đúng cách và hiểu rõ hơn về quy trình làm việc nhóm trong phát triển phần mềm.
+Bên cạnh đó, em cũng rèn luyện được kỹ năng giải quyết vấn đề và làm việc nhóm hiệu quả hơn thông qua việc trao đổi và hỗ trợ các thành viên khác trong nhóm.
+5. Phần chưa hoàn thiện
+Mặc dù đã hoàn thành phần lớn các yêu cầu, tuy nhiên vẫn còn một số nội dung chưa được hoàn thiện hoàn toàn. Cụ thể, giao diện hiện tại vẫn chưa được tối ưu về mặt thẩm mỹ và trải nghiệm người dùng, cần cải thiện thêm về bố cục và cách hiển thị.
+Phần hiển thị Gantt Chart vẫn còn đơn giản và có thể nâng cấp để trực quan hơn. Ngoài ra, một số chức năng vẫn cần được kiểm tra kỹ lưỡng để đảm bảo không xảy ra lỗi trong các trường hợp đặc biệt.
+Đặc biệt, việc đưa toàn bộ code lên GitHub vẫn chưa được hoàn thiện đầy đủ, cần bổ sung và chỉnh sửa để đảm bảo tính đồng bộ và chuyên nghiệp của dự án.
