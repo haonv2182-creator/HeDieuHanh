@@ -1,1 +1,15 @@
+# ==== Thuật toán FCFS( First Come First Server) ====
+
+## 1. Khái niệm:
+    -Là một thuật toán lập lịch CPU cơ bản trong Hệ Điều Hành, hoạt động theo nguyên tắc: tiến trình nào đến trước sẽ được phục vụ trước
+## 2. Nguyên lí hoạt động:
+    -Các tiến trình được sắp xếp theo thời điểm đến (arrival time)
+    -CPU xử lí từng tiến trình theo thứ tự đó
+    -Không có sự ngắt quãng (non-preemptive)
+## 3. Ưu điểm:
+    -Đơn giản, dễ hiểu và dễ triển khai
+    -Không có sự ưu tiên, đảm bảo công bằng cho tất cả tiến trình
+## 4. Nhược điểm:
+    -Không đảm bảo hiệu suất cao
+    -Có thể gây ra hiện tượng "convoy effect" #Tiến trình dài đứng trước làm các tiến trình ngắn phải chờ lâu
 
