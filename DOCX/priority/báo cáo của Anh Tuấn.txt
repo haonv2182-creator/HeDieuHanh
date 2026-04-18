@@ -1,0 +1,35 @@
+﻿BÁO CÁO PHẦN CÔNG VIỆC CÁ NHÂN – THUẬT TOÁN PRIORITY NON-PREEMPTIVE
+Họ và tên : Phạm Vũ Anh Tuấn	
+MSSV : 068206013277
+
+1. Phần được giao
+Trong khuôn khổ đề tài về các thuật toán lập lịch CPU, tôi được phân công phụ trách nghiên cứu và triển khai nội dung liên quan đến thuật toán Priority Non-preemptive. Nhiệm vụ chính bao gồm: tìm hiểu cơ sở lý thuyết, phân tích nguyên lý hoạt động, xây dựng mô hình triển khai trong chương trình, thiết kế ví dụ minh họa, cũng như đánh giá ưu – nhược điểm của thuật toán.
+Bên cạnh đó, tôi chịu trách nhiệm trình bày toàn bộ nội dung mục 2.4 trong báo cáo, đảm bảo tính logic, rõ ràng và bám sát cả lý thuyết lẫn thực tiễn mô phỏng. Đây là một phần quan trọng, góp phần thể hiện khả năng hiểu và áp dụng kiến thức về lập lịch CPU trong hệ điều hành.
+2. Đã làm được gì
+Trong quá trình thực hiện, tôi đã hoàn thành đầy đủ các nội dung được giao với mức độ chi tiết và tính hệ thống cao:
+Trước hết, tôi đã nghiên cứu và nắm vững lý thuyết nền tảng của thuật toán Priority Scheduling, đặc biệt là nguyên tắc phân bổ CPU dựa trên mức độ ưu tiên của tiến trình. Qua đó, tôi hiểu rõ bản chất của biến thể non-preemptive – tức là tiến trình sau khi được cấp CPU sẽ thực thi liên tục cho đến khi hoàn thành, không bị gián đoạn.
+Tiếp theo, tôi tiến hành phân tích nguyên lý hoạt động của thuật toán một cách cụ thể. Thuật toán được xây dựng dựa trên cơ chế lựa chọn tiến trình có độ ưu tiên cao nhất trong tập các tiến trình đã đến tại một thời điểm xác định. Đồng thời, tôi đã làm rõ cơ chế xử lý các trường hợp đặc biệt thông qua hệ thống so sánh nhiều cấp (priority → arrival_time → pid), đảm bảo tính ổn định và nhất quán của kết quả.
+Về mặt triển khai, tôi đã mô tả chi tiết cách cài đặt thuật toán trong chương trình, bao gồm việc sử dụng các biến điều khiển như current_time, visited, completed và result. Ngoài ra, tôi cũng chú trọng đến việc mô phỏng trạng thái CPU rảnh (idle), giúp mô hình trở nên sát với thực tế vận hành của hệ điều hành.
+Bên cạnh đó, tôi đã xây dựng ví dụ minh họa cụ thể, tiến hành phân tích từng bước và đưa ra bảng kết quả bao gồm các thông số quan trọng như Waiting Time, Turnaround Time và Completion Time. Điều này giúp kiểm chứng tính đúng đắn của thuật toán.
+Cuối cùng, tôi đã thực hiện đánh giá và so sánh thuật toán, chỉ ra ưu điểm trong việc ưu tiên các tiến trình quan trọng, đồng thời phân tích hạn chế như hiện tượng starvation, từ đó liên hệ với các giải pháp cải tiến trong thực tế.
+3. Khó khăn gặp phải
+Trong quá trình thực hiện, tôi gặp một số khó khăn nhất định:
+Trước tiên là sự nhầm lẫn giữa hai biến thể preemptive và non-preemptive. Việc phân biệt rõ khi nào tiến trình bị ngắt và khi nào không là yếu tố quan trọng, đòi hỏi phải hiểu sâu bản chất của từng loại thuật toán.
+Thứ hai, việc xây dựng cơ chế lựa chọn tiến trình theo nhiều tiêu chí (priority, arrival_time, pid) yêu cầu tư duy logic chặt chẽ. Nếu không xử lý tốt, kết quả có thể bị sai lệch hoặc không nhất quán.
+Ngoài ra, việc mô phỏng trạng thái CPU rảnh cũng là một điểm khó, vì đây là yếu tố thường bị bỏ qua trong lý thuyết nhưng lại rất quan trọng trong thực tế.
+Bên cạnh đó, quá trình tính toán các chỉ số thời gian cần độ chính xác cao. Chỉ cần sai một bước nhỏ cũng có thể dẫn đến sai toàn bộ bảng kết quả.
+Cuối cùng, việc trình bày nội dung báo cáo sao cho vừa mang tính học thuật, vừa dễ hiểu và mạch lạc cũng là một thách thức, đòi hỏi nhiều lần chỉnh sửa và hoàn thiện.
+4. Học được gì
+Qua quá trình thực hiện phần công việc này, tôi đã tích lũy được nhiều kiến thức và kỹ năng quan trọng:
+Trước hết, tôi hiểu sâu hơn về cơ chế lập lịch CPU trong hệ điều hành, từ đó có cái nhìn rõ ràng hơn về cách hệ thống quản lý và phân bổ tài nguyên.
+Thứ hai, tôi phát triển được tư duy thiết kế thuật toán, đặc biệt là khả năng xây dựng logic nhiều tầng để xử lý các tình huống phức tạp.
+Ngoài ra, tôi học được cách mô phỏng một hệ thống thực tế thông qua chương trình, bao gồm việc xử lý các trạng thái như CPU idle hay tiến trình đến theo thời gian.
+Bên cạnh đó, tôi nâng cao kỹ năng phân tích và đánh giá, biết cách nhận diện ưu – nhược điểm của một thuật toán và đề xuất hướng cải tiến phù hợp.
+Cuối cùng, tôi cải thiện đáng kể kỹ năng viết báo cáo kỹ thuật, biết cách trình bày nội dung một cách rõ ràng, logic và có tính thuyết phục cao.
+5. Phần chưa hoàn thiện 
+Mặc dù đã hoàn thành đầy đủ các yêu cầu cơ bản, vẫn còn một số nội dung có thể phát triển thêm để hoàn thiện hơn:
+Trước hết, tôi chưa triển khai cơ chế aging nhằm khắc phục hiện tượng starvation – một hạn chế quan trọng của thuật toán.
+Bên cạnh đó, phần so sánh với các thuật toán khác như SJF hay Round Robin vẫn chưa được mở rộng sâu, nếu bổ sung sẽ giúp tăng tính toàn diện cho bài.
+Ngoài ra, tôi chưa tối ưu hóa thuật toán cho các tập dữ liệu lớn, cũng như chưa đánh giá hiệu năng trong các trường hợp phức tạp hơn.
+Việc trực quan hóa bằng biểu đồ Gantt tuy đã đề cập nhưng chưa được trình bày một cách nổi bật và chuyên nghiệp trong báo cáo.
+Cuối cùng, tôi chưa mở rộng sang phiên bản Priority Preemptive để có cái nhìn so sánh đầy đủ hơn giữa hai hướng tiếp cận.
